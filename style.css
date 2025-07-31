@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: #081b29;
 }
 
 body {
@@ -10,31 +11,18 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content:end;
     align-items: center;
     z-index: 100;
 }
 
-.logo {
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.logo:hover {
-    color: #00abf0;
-}
-
-.navbar a {
+.nav a {
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
@@ -43,8 +31,8 @@ body {
     transition: 0.3s;
 }
 
-.navbar a:hover, .navbar a.active {
-    color: #00abf0;
+.nav a:hover, .nav a.active {
+    color: #00abf0 !important;
 }
 
 .home {
@@ -73,6 +61,12 @@ body {
     line-height: 1.2;
 }
 
+.home-content h1::selection {
+    background-color: #ededed;
+    color: #00abf0
+}
+
+
 .home-content h1::before {
     content: '';
     position: absolute;
@@ -97,6 +91,11 @@ body {
     color: #00abf0;
 }
 
+.home-content h3::selection {
+    background-color: #ededed;
+    color: #00abf0;
+}
+
 .home-content h3::before {
     content: '';
     position: absolute;
@@ -110,9 +109,14 @@ body {
 }
 
 .home-content p {
+    color: #ededed;
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
+}
+
+.home-content p::selection {
+    background-color: #00abf0;
 }
 
 .home-content p::before {
@@ -133,6 +137,11 @@ body {
     /* justify-content: space-between; */
     width: 345px;
     height: 50px;
+}
+
+.home-content .btn-box::selection {
+    background-color: #ededed;
+    color: #00abf0;
 }
 
 .home-content .btn-box::before {
@@ -170,19 +179,6 @@ body {
 
 .btn-box a:hover {
     color: #00abf0;
-}
-
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover {
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before {
-    background: #00abf0;
 }
 
 .btn-box a::before {
@@ -239,10 +235,6 @@ body {
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
-}
-
-.home-sci a:hover {
-    color: #081b29;
 }
 
 .home-sci a::before {
@@ -302,4 +294,135 @@ body {
     100% {
         pointer-events: auto;
     }
+}
+
+
+
+/* About Section -->   */
+
+.skills-documentation {
+    text-decoration: none;
+}
+
+.skills-content {
+    margin-top: 150px;
+    /* margin-bottom: 50px; */
+}
+
+.skillsIcon {
+    height: 150px;
+    width: 150px;
+    font-size: 150px;
+}
+
+.skillsName {
+    color: #ededed;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.certifications {
+    color: #ededed;
+    padding: 5% 10%;
+}
+
+.certifications-heading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.certifications-content {
+    margin-top: 15px;
+    color: #00abf0;
+}
+
+.certifications-content a:hover {
+    font-size: large;
+}
+
+/* Projects Section -->  */
+
+.projects-content {
+    margin-top: 150px;
+    /* margin-left: 150px; */
+    color: #ededed;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+.card-body .card-title {
+    color: #ededed;
+    font-weight: bold;
+}
+
+.card-body .card-text {
+    color: #ededed;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #00abf0;
+}
+
+
+
+/* Contact Section -->   */
+
+.contact-heading {
+    margin-top: 150px;
+    color: #ededed;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-sub-heading {
+    padding-top: 10px;
+    color: #ededed;
+}
+
+.form-section-inputs {
+    padding: 10px;
+    color: #ededed;
+}
+
+.form .form-submit-btn {
+    color: #00abf0;
+    background-color: #081b29;
+    border: 2px solid #00abf0;
+}
+
+.form .form-submit-btn:hover {
+
+    color: #ededed;
+    background-color: #00abf0;
+    border: 2px solid #ededed;
+    transition: 0.5s;
+}
+
+.form-footer {
+    color: #ededed;
+}
+
+.form-icons {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+
+
+/* About Section -->   */
+
+.about-content {
+    max-width: 600px;
+    color: #ededed;
+}
+
+.about-content h5 {
+    margin-bottom: 15px;
 }
